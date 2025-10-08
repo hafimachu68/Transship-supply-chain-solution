@@ -1563,6 +1563,38 @@ h1, h2, h3, h4, h5,
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
+.heading-line {
+  display: inline-block;
+  position: relative; /* Needed for pseudo-element positioning */
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Add the animated bottom border */
+.heading-line::after {
+  content: "";
+  display: block;
+  width: 50%;             /* Initial width of the border */
+  height: 3px;            /* Border thickness */
+  background-color: #007bff;
+  margin: 5px auto 0;     /* Space below text, centered */
+  transform-origin: center;
+  animation: grow 2s infinite alternate;
+}
+
+/* Keyframes for the border animation */
+@keyframes grow {
+  0% {
+    width: 30%;  /* minimum width */
+  }
+  100% {
+    width: 50%;  /* maximum width */
+  }
+}
+
+
 
 /* Gradient Animation Keyframes */
 @keyframes gradientMove {
