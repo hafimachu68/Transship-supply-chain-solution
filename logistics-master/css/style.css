@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   width: 100%; 
-  background: rgb(254 254 254 / 65%); /* modern CSS syntax */
+  background: #ffffff; /* semi-transparent white */
     backdrop-filter: blur(10px) saturate(150%); /* frosted glass effect */
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     border-bottom: 1px solid rgb(255 255 255 / 40%); /* subtle border */
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5,
  }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 0px;
-        color: #fff;
+        color: #063e7d; ;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #4A90E2; }
